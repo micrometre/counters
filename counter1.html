@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CBW</title>
+    </head>
+    <style>
+        body {
+            size: auto;
+            background: lightblue;
+            margin-left: auto ;
+            margin-right: auto ;
+        }
+
+        button {
+            padding: 50px;
+            background: yellow;
+            text-shadow: 1px 1px 1px #202020;
+            font-size: 50pt;
+            border: 10px solid lightblue;
+            color: lightblue;
+        }
+
+        .main {
+            size: auto;
+            text-align: center;
+            margin-left: auto ;
+            margin-right: auto ;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <button id="clickme">car park1= 0</button>
+            <script>
+                var button = document.getElementById("clickme")
+                  , count = 0;
+                button.onclick = function() {
+                    count += 1;
+                    button.innerHTML = "car park1= " + count;
+                }
+                ;
+            </script>
+            <button id="clickme1">car park2= 0</button>
+            <script>
+                var button1 = document.getElementById("clickme1")
+                  , count1 = 0;
+                button1.onclick = function() {
+                    count1 += 1;
+                    button1.innerHTML = "car park2= " + count1;
+                }
+                ;
+            </script>
+        </div>
+    </body>
+</html>
